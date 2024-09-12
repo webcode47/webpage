@@ -1,0 +1,92 @@
+.mobile-nav{
+    overflow-x: hidden;
+    background-color: transparent;
+    width: 90vw;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    /* color: white; */
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+#menu{
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 500,
+    'GRAD' -25,
+    'opsz' 24;
+    z-index: 1;
+    color: white;
+}
+.mobile-nav img{
+    width: 100px;
+    cursor: pointer;
+    z-index: -1;
+}
+.links-mobile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    flex-direction: column;
+    background-color: #01355fec;
+    backdrop-filter: blur(5px);
+    box-shadow: -10px 50px 60px -20px black;
+    width: 40%;
+    height: calc(100vh - 00px);
+    transform: translateX(110%);
+    transition: 0.5s ease;
+
+}
+.open{
+    transform: translateX(0%);
+}
+.link-icon{
+    display: flex;
+    align-items: center;
+}
+.links-items a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    transition: 0.2s ease;
+    transform-origin: center;
+    text-align: center;   
+}
+.links-name{
+    font-family: poppins;
+    font-size: 15px;
+}
+.links-items{
+    padding: -60px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    /* margin-bottom: -40px */
+    width: 10%;
+}
+.links-items:active{
+    background-color: #00000030;
+    width: 100%;
+}
+.links-mobile button{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: white;
+    color: #01203a;
+    outline: none;
+    border: none;
+    margin: auto;
+    margin-bottom: 30%;
+}
